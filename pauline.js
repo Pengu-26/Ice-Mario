@@ -35,22 +35,22 @@ bot.on('message', msg => {
     }
 
     // Commands
-    else if (msg.content == "im!help") {
+    else if (msg.content == "p!help") {
         imhelp(msg)
-    } else if (msg.content == "im!commands" || msg.content == "im!command") {
+    } else if (msg.content == "p!commands" || msg.content == "p!command") {
         commands(msg)
-    } else if (msg.content.startsWith('im!say') || msg.content.startsWith("!im")) {
+    } else if (msg.content.startsWith('p!say') || msg.content.startsWith("!p")) {
         imsay(msg)
-    } else if (msg.content == "im!v" || msg.content == "im!version") {
-        msg.channel.send("Ice Mario! version " + VERSION)
-    } else if (msg.content === 'im!ping') {
+    } else if (msg.content == "p!v" || msg.content == "p!version") {
+        msg.channel.send("Pauline! version " + VERSION)
+    } else if (msg.content === 'p!ping') {
         //msg.reply('pong');  // use this to reply back the command
         msg.channel.send('pong');
     } 
 
     // responses
-    else if (msg.content.includes("<@a large tag number>")) {  // someone pings Ice Mario!
-        msg.channel.send("😳")
+    else if (msg.content.includes("<@&765276121545441301>")) {  // someone pings Pauline!
+        msg.channel.send("🎵PAAAUUULLIIINNEEE🎵")
     } 
 
 });
@@ -63,10 +63,10 @@ function dm(msg) {
     msg.author.send(message).catch(err => console.error(err));
     return
 }
-function imhelp(msg) {
+function phelp(msg) {
     message = "Usage: \n" +
-    "im!say <message> or !im <message> to send a message.\n" +
-    "Use im!commands to see a list of all the commands currently supported."
+    "p!say <message> or !p <message> to send a message.\n" +
+    "Use p!commands to see a list of all the commands currently supported."
     msg.channel.send(message)
 }
 function commands(msg) {
