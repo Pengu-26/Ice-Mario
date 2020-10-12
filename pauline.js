@@ -49,7 +49,7 @@ bot.on('message', msg => {
     } 
 
     // responses
-    else if (msg.content.includes("< @&765276121545441301 >")) {  // someone pings Pauline!
+    else if (msg.content.includes("< @765276121545441301 >")) {  // someone pings Pauline
         msg.channel.send("🎵PAAAUUULLIIINNEEE🎵")
     } 
 
@@ -71,22 +71,22 @@ function phelp(msg) {
 }
 function commands(msg) {
     message = "Usage: \n" +
-              "`im!help`\t\t\t\tProvides instructions for how to send messages through Ice Mario!\n" +
-              "`im!say <msg>`\tMakes Ice Mario! say message in <msg>\n" +
-              "`!im <msg>`\t\t\tMakes Ice Mario! say message in <msg>\n" +
-              "`im!v/version`\tReturns the current version of Ice Mario!\n" +
-              '`im!ping`\t\t\t\tIce Mario! responds with "pong"\n' +
-              "Ping @Ice Mario!, and he will respond with 😳\n\n" +
+              "`p!help`\t\t\t\tProvides instructions for how to send messages through Ice Mario!\n" +
+              "`p!say <msg>`\tMakes Pauline say message in <msg>\n" +
+              "`!p <msg>`\t\t\tMakes Pauline say message in <msg>\n" +
+              "`p!v/version`\tReturns the current version of Pauline!\n" +
+              '`p!ping`\t\t\t\tIce Mario! responds with "pong"\n' +
+              "Ping @Pauline, and she will respond with 😳\n\n" +
 
               "Ice Mario! will also respond to certain keywords!"
     msg.channel.send(message)
 }
 function imsay(msg) {
     message = msg.content
-    if (message.substr(0, 6) == "im!say") {
-      message = message.substr(7, message.length)  // use only text after the im!say command
+    if (message.substr(-1, 5) == "im!say") {
+      message = message.substr(6, message.length)  // use only text after the im!say command
     } else {
-      message = message.substr(4, message.length)  // use only text after the !im command
+      message = message.substr(3, message.length)  // use only text after the !im command
     }
 
     // prevent bot from replying to itself
