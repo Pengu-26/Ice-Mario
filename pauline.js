@@ -83,8 +83,8 @@ function commands(msg) {
 }
 function imsay(msg) {
     message = msg.content
-    if (message.substr(-1, 5) == "im!say") {
-      message = message.substr(6, message.length)  // use only text after the im!say command
+    if (message.substr(0, 6) == "im!say") {
+      message = message.substr(7, message.length)  // use only text after the im!say command
     } else {
       message = message.substr(3, message.length)  // use only text after the !im command
     }
