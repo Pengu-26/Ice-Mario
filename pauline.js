@@ -92,7 +92,7 @@ function imsay(msg) {
     // prevent bot from replying to itself
     user = msg.member.user.tag
     if (user == "Ice Mario!#9224") {return}
-    
+    msg.delete()
     msg.channel.send(message);
 }
 
