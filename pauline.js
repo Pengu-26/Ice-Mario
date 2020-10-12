@@ -49,7 +49,7 @@ bot.on('message', msg => {
     } 
 
     // responses
-    else if (msg.content.includes("<@765276121545441301>")) {  // someone pings Pauline
+    else if (msg.content.includes("<@&765276121545441301>")) {  // someone pings Pauline
         msg.channel.send("🎵PAAAUUULLIIINNEEE🎵")
     } 
 
