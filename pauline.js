@@ -50,8 +50,8 @@ bot.on('message', msg => {
                       "*And if the dark clouds start to swirl!*\n" +
                       "*Don't fear don't shed a tear, cause' I'll be your one up girl!*"
     } else if (msg.content === "p!musicvideo") {
-        var message = "Here you go!"
-                      "https://youtu.be/_hALvbHPmSA"
+        var message = "Here you go!\n" +
+                      "https://youtu.be/_hALvbHPmSA\n" +
                       "You're welcome!😉" 
         msg.channel.send(message);
     } 
