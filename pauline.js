@@ -54,8 +54,9 @@ bot.on('message', msg => {
                       "https://youtu.be/_hALvbHPmSA\n" +
                       "You're welcome!😉" 
         msg.channel.send(message);
+} else if (msg.content === "p!wishmeluck") {
+        var message = "Good luck!🍀😉"
     } 
-
     // responses
     else if (msg.content.includes("<@765272148876591135>")) {  // someone pings Pauline
         msg.channel.send("🎵PAAAUUULLIIINNEEE🎵")
