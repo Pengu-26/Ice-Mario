@@ -39,8 +39,8 @@ bot.on('message', msg => {
         imhelp(msg)
     } else if (msg.content == "p!commands" || msg.content == "p!command") {
         commands(msg)
-    } else if (msg.content.startsWith('p!say') || msg.content.startsWith("!p")) {
-        imsay(msg)
+    } else if (msg.content.startsWith("!p")) {
+        psay(msg)
     } else if (msg.content == "p!v" || msg.content == "p!version") {
         msg.channel.send("Pauline! version " + VERSION)
     } else if (msg.content === 'p!ping') {
