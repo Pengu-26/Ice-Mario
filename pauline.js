@@ -89,7 +89,7 @@ function commands(msg) {
               "`p!help`\t\t\t\tProvides instructions for how to send messages through Pauline\n" +
               "`!p <msg>`\t\t\tMakes Pauline say message in <msg>\n" +
               "`p!v/version`\tReturns the current version of Pauline\n" +
-              '`\`p!jumpupsuperstar` makes Pauline sing part of her song!n' +
+              '`p!jumpupsuperstar` makes Pauline sing part of her song!n' +
               'Ping @Pauline, and she will respond with "🎵PAAAUUULLIIINNEEE🎵"\n\n' +
 
               "Pauline will also respond to certain keywords!"
