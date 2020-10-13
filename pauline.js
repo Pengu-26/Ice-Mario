@@ -53,7 +53,7 @@ bot.on('message', msg => {
         var message = "Here you go!\n" +
                       "https://youtu.be/_hALvbHPmSA\n" +
                       "You're welcome!😉" 
-        msg.channel.send(message);
+        msg.channel.send();
 } else if (msg.content === "p!wishmeluck") {
         var message = "Good luck!🍀😉"
     } 
