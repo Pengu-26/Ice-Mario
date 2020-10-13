@@ -40,7 +40,7 @@ bot.on('message', msg => {
     } else if (msg.content == "p!commands" || msg.content == "p!command") {
         commands(msg)
     } else if (msg.content.startsWith("!p")) {
-        psay(msg)
+        imsay(msg)
     } else if (msg.content == "p!v" || msg.content == "p!version") {
         msg.channel.send("Pauline! version " + VERSION)
     } else if (msg.content === 'p!ping') {
