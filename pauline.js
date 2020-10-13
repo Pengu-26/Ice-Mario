@@ -40,7 +40,7 @@ bot.on('message', msg => {
     } else if (msg.content == "p!commands" || msg.content == "p!command") {
         commands(msg)
     } else if (msg.content.startsWith("!p")) {
-        imsay(msg)
+        psay(msg)
     } else if (msg.content == "p!v" || msg.content == "p!version") {
         msg.channel.send("Pauline! version " + VERSION)
     } else if (msg.content === 'p!ping') {
@@ -80,7 +80,7 @@ function commands(msg) {
               "Ice Mario! will also respond to certain keywords!"
     msg.channel.send(message)
 }
-function imsay(msg) {
+function psay(msg) {
     message = msg.content
     if (message.substr(0, 6) == "im!say") {
       message = message.substr(7, message.length)  // use only text after the im!say command
