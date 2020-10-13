@@ -48,7 +48,7 @@ bot.on('message', msg => {
                       "*Jump up don't be scared! (Jump up don't be scared)*\n" +
                       "*Jump up and your cares will soar away! (Ooooh)*\n" +
                       "*And if the dark clouds start to swirl! (Dark clouds start to swirl)*\n" +
-                      "*Don't fear don't shed a tear, cause' I'll be your one up girl!*\n"
+                      "*Don't fear don't shed a tear, cause' I'll be your one up girl!*"
         msg.channel.send(message);
     } 
 
