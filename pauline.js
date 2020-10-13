@@ -56,10 +56,11 @@ bot.on('message', msg => {
         msg.channel.send(message);
     } else if (msg.content === "p!wishmeluck") {
         var message = "Good luck!🍀😉"
-             msg.channel.send(message);
+        msg.channel.send(message);
+        msg.delete("p!wishmeluck")
     } else if (msg.content === "p!herewego") {
         var message = "*Off the rails!*"
-             msg.channel.send(message);
+        msg.channel.send(message);
 
     } 
     // responses
