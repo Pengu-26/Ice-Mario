@@ -71,10 +71,9 @@ function phelp(msg) {
 }
 function commands(msg) {
     message = "Usage: \n" +
-              "`p!help`\t\t\t\tProvides instructions for how to send messages through Ice Mario!\n" +
-              "`p!say <msg>`\tMakes Pauline say message in <msg>\n" +
+              "`p!help`\t\t\t\tProvides instructions for how to send messages through Pauline\n" +
               "`!p <msg>`\t\t\tMakes Pauline say message in <msg>\n" +
-              "`p!v/version`\tReturns the current version of Pauline!\n" +
+              "`p!v/version`\tReturns the current version of Pauline\n" +
               '`p!ping`\t\t\t\tIce Mario! responds with "pong"\n' +
               "Ping @Pauline, and she will respond with 😳\n\n" +
 
