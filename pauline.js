@@ -62,7 +62,7 @@ bot.on('message', msg => {
         var message = "*Off the rails!*"
         msg.channel.send(message);
     } else if (msg.content == "p!sendselfie")
-    msg.channel.send("", {files: [""]})
+    msg.channel.send("", {files: ["./your file.jpeg"]})
 
     } 
     // responses
