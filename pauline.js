@@ -44,16 +44,11 @@ bot.on('message', msg => {
     } else if (msg.content == "p!v" || msg.content == "p!version") {
         msg.channel.send("Pauline! version " + VERSION)
     } else if (msg.content === "p!jumpupsuperstar") {
-        var message = "It's time to jump up in the air! (Jump up in the air)\n" +
-                      "Jump up don't be scared! (Jump up don't be scared)\n" +
-                      "Jump up and your cares will soar away! (Ooooh)\n" +
-                      "And if the dark clouds start to swirl! (Dark clouds start to swirl)\n" +
-                      "Don't fear don't shed a tear, cause' I'll be your one up girl!\n" +
-                      "It's time to jump up in the air! (Jump up in the air)\n" +
-                      "Jump up don't be scared! (Jump up don't be scared)\n" +
-                      "Jump up and your cares will soar away! (Ooooh)\n" +
-                      "And if the dark clouds start to swirl! (Dark clouds start to swirl)\n" +
-                      "Don't fear don't shed a tear, cause' I'll be your one up girl!*')\n"
+        var message = "*It's time to jump up in the air! (Jump up in the air)*\n" +
+                      "*Jump up don't be scared! (Jump up don't be scared)*\n" +
+                      "*Jump up and your cares will soar away! (Ooooh)*\n" +
+                      "*And if the dark clouds start to swirl! (Dark clouds start to swirl)*\n" +
+                      "*Don't fear don't shed a tear, cause' I'll be your one up girl!*\n"
         msg.channel.send(message);
     } 
 
