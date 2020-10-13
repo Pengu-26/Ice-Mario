@@ -38,7 +38,7 @@ bot.on('message', msg => {
     else if (msg.content == "p!help") {
         imhelp(msg)
     } else if (msg.content == "p!commands" || msg.content == "p!command") {
-      // commands(msg)
+         commands(msg)
     } else if (msg.content.startsWith("!p")) {
         psay(msg)
     } else if (msg.content == "p!v" || msg.content == "p!version") {
@@ -89,10 +89,10 @@ function commands(msg) {
               "`p!help`\t\t\t\tProvides instructions for how to send messages through Pauline\n" +
               "`!p <msg>`\t\t\tMakes Pauline say message in <msg>\n" +
               "`p!v/version`\tReturns the current version of Pauline\n" +
-              '`p!ping`\t\t\t\t Pauline responds with "pong"\n' +
+              '`\p!jumpupsuperstar makes Pauline sing part of her song!n' +
               'Ping @Pauline, and she will respond with "🎵PAAAUUULLIIINNEEE🎵"\n\n' +
 
-              "Ice Mario! will also respond to certain keywords!"
+              "Pauline will also respond to certain keywords!"
     msg.channel.send(message)
 }
 function psay(msg) {
