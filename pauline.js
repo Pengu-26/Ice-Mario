@@ -89,8 +89,8 @@ function commands(msg) {
               "`p!help`\t\t\t\tProvides instructions for how to send messages through Pauline\n" +
               "`!p <msg>`\t\t\tMakes Pauline say message in <msg>\n" +
               "`p!v/version`\tReturns the current version of Pauline\n" +
-              '`p!ping`\t\t\t\tIce Mario! responds with "pong"\n' +
-              "Ping @Pauline, and she will respond with 😳\n\n" +
+             // '`p!ping`\t\t\t\t Pauline responds with "pong"\n' +
+              "Ping @Pauline, and she will respond with "🎵PAAAUUULLIIINNEEE🎵\n\n" +
 
               "Ice Mario! will also respond to certain keywords!"
     msg.channel.send(message)
