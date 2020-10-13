@@ -61,7 +61,6 @@ bot.on('message', msg => {
     } else if (msg.content === "p!herewego") {
         var message = "*Off the rails!*"
         msg.channel.send(message);
-        msg.delete("p!herewego");
     } 
     // responses
     else if (msg.content.includes("<@765272148876591135>")) {  // someone pings Pauline
