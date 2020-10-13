@@ -48,7 +48,7 @@ bot.on('message', msg => {
                       "*Jump up don't be scared!*\n" +
                       "*Jump up and your cares will soar away!*\n" +
                       "*And if the dark clouds start to swirl!*\n" +
-                      "*Don't fear don't shed a tear, cause' I'll be your one up girl!*
+                      "*Don't fear don't shed a tear, cause' I'll be your one up girl!*"
     } else if (msg.content === "p!musicvideo") {
         var message = "Here you go!\n" +
                       "https://youtu.be/_hALvbHPmSA\n" +
