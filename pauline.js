@@ -90,8 +90,8 @@ function commands(msg) {
               "`p!musicvideo' makes Pauline send a music video of her song, Jump Up, Super Star!\n" +
               "`p!wishmeluck' makes Pauline wish you good luck!\n" +
               "`p!herewego' makes Pauline respond with *Off the rails!*\n" +
-              "`p!sendselfi' makes Pauline send her favorite selfie taken with 3 friends!\n" +
-              "Ping @Pauline, and she will respond with *🎵PAAAUUULLIIINNEEE🎵*"
+              "`p!sendselfie' makes Pauline send her favorite selfie taken with 3 friends!\n" +
+              "Ping `@Pauline`, and she will respond with *🎵PAAAUUULLIIINNEEE🎵*\n"
 
               msg.channel.send(message)
 }
