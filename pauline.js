@@ -60,6 +60,10 @@ bot.on('message', msg => {
         msg.channel.send(message);
     } else if (msg.content == "p!sendselfie") {
         msg.channel.send("Here is my favorite selfie of my me and my BFFs 😄!", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]})
+
+    } else if (msg.content == "p!ferrari") {
+        msg.channel.send("I'm not flexing or anything, but here's a picture of my red Ferrari 😌!", {files: ["./78ADCEA8-9C5F-4123-9E2F-4CF43D336902.jpeg"]})
+
     } 
     // responses
     else if (msg.content.includes("<@765272148876591135>")) {  // someone pings Pauline
@@ -91,6 +95,7 @@ function commands(msg) {
               "`p!wishmeluck` makes Pauline wish you good luck!\n" +
               "`p!herewego` makes Pauline respond with *Off the rails!*\n" +
               "`p!sendselfie` makes Pauline send her favorite selfie taken with 3 friends!\n" +
+              "`p!Ferrari` makes Pauline send a picture of her Ferrari!\n" +
               "Ping `@Pauline`, and she will respond with *🎵PAAAUUULLIIINNEEE🎵*\n"
 
               msg.channel.send(message)
