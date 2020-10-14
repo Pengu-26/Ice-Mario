@@ -35,9 +35,7 @@ bot.on('message', msg => {
     }
 
     // Commands
-     // else if (msg.content == "p!help") {
-        // phelp(msg)
-      else if (msg.content == "p!commands" || msg.content == "p!command") {
+        else if (msg.content == "p!commands" || msg.content == "p!command") {
          commands(msg)
     } else if (msg.content.startsWith("!p")) {
         psay(msg)
@@ -86,7 +84,6 @@ function phelp(msg) {
 }
 function commands(msg) {
     message = "Usage: \n" +
-             // "``\t\t\t\tProvides instructions for how to send messages through Pauline\n" +
               "`!p <msg>`\t\t\tMakes Pauline say message in <msg>\n" +
               "`p!v/version`\tReturns the current version of Pauline\n" +
               "`p!jumpupsuperstar` makes Pauline sing part of her song\n" +
