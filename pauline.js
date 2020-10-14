@@ -86,14 +86,17 @@ function phelp(msg) {
 }
 function commands(msg) {
     message = "Usage: \n" +
-              "`p!help`\t\t\t\tProvides instructions for how to send messages through Pauline\n" +
+             // "``\t\t\t\tProvides instructions for how to send messages through Pauline\n" +
               "`!p <msg>`\t\t\tMakes Pauline say message in <msg>\n" +
               "`p!v/version`\tReturns the current version of Pauline\n" +
-              "`p!jumpupsuperstar` makes Pauline sing part of her song!n" +
-              'Ping @Pauline, and she will respond with "🎵PAAAUUULLIIINNEEE🎵"\n\n' +
+              "`p!jumpupsuperstar` makes Pauline sing part of her song\n" +
+              "`p!musicvideo' makes Pauline send a music video of her song, Jump Up, Super Star!\n" +
+              "`p!wishmeluck' makes Pauline wish you good luck!\n" +
+              "`p!herewego' makes Pauline respond with *Off the rails!*\n" +
+              "`p!sendselfi' makes Pauline send her favorite selfie taken with 3 friends!\n" +
+              'Ping @Pauline, and she will respond with "🎵PAAAUUULLIIINNEEE🎵"
 
-              "Pauline will also respond to certain keywords!"
-    msg.channel.send(message)
+              msg.channel.send(message)
 }
 function psay(msg) {
     message = msg.content
@@ -105,7 +108,7 @@ function psay(msg) {
 
     // prevent bot from replying to itself
     user = msg.member.user.tag
-    if (user == "Ice Mario!#9224") {return}
+    if (user == "Pauline#4516") {return}
     msg.delete()
     msg.channel.send(message);
 }
