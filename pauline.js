@@ -37,7 +37,7 @@ bot.on('message', msg => {
     // Commands
      // else if (msg.content == "p!help") {
         // phelp(msg)
-    } else if (msg.content == "p!commands" || msg.content == "p!command") {
+      else if (msg.content == "p!commands" || msg.content == "p!command") {
          commands(msg)
     } else if (msg.content.startsWith("!p")) {
         psay(msg)
