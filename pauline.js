@@ -87,10 +87,10 @@ function commands(msg) {
               "`!p <msg>`\t\t\tMakes Pauline say message in <msg>\n" +
               "`p!v/version`\tReturns the current version of Pauline\n" +
               "`p!jumpupsuperstar` makes Pauline sing part of her song\n" +
-              "`p!musicvideo' makes Pauline send a music video of her song, Jump Up, Super Star!\n" +
-              "`p!wishmeluck' makes Pauline wish you good luck!\n" +
-              "`p!herewego' makes Pauline respond with *Off the rails!*\n" +
-              "`p!sendselfie' makes Pauline send her favorite selfie taken with 3 friends!\n" +
+              "`p!musicvideo` makes Pauline send a music video of her song, Jump Up, Super Star!\n" +
+              "`p!wishmeluck` makes Pauline wish you good luck!\n" +
+              "`p!herewego` makes Pauline respond with *Off the rails!*\n" +
+              "`p!sendselfie` makes Pauline send her favorite selfie taken with 3 friends!\n" +
               "Ping `@Pauline`, and she will respond with *🎵PAAAUUULLIIINNEEE🎵*\n"
 
               msg.channel.send(message)
