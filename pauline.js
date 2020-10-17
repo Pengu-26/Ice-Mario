@@ -63,7 +63,7 @@ bot.on('message', msg => {
     } else if (msg.content == "p!ferrari") {
         msg.channel.send("I'm not flexing or anything, but here's a picture of my red Ferrari! 😌", {files: ["./78ADCEA8-9C5F-4123-9E2F-4CF43D336902.jpeg"]})
     } else if (msg.content == "p!partytime") {
-        msg.channel.send("I am now in my party outfit! 🥳", {files: ["./665532E9-00F1-42C1-A734-EBC7242FE2EB"]});
+        msg.channel.send("I am now in my party outfit! 🥳", {files: ["./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg"]});
         bot.user.setAvatar("./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg")
         .catch((error) => { msg.channel.send("ERROR: " + error); }); 
     } 
