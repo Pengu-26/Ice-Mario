@@ -65,8 +65,8 @@ bot.on('message', msg => {
     } else if (msg.content == "p!partytime") {
         msg.channel.send("I am now in my party outfit! 🥳", {files: ["./665532E9-00F1-42C1-A734-EBC7242FE2EB"]});
         bot.user.setAvatar("./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg"); 
-       
     } 
+
     // responses
     else if (msg.content.includes("<@765272148876591135>")) {  // someone pings Pauline
         msg.channel.send("🎵PAAAUUULLIIINNEEE🎵")
