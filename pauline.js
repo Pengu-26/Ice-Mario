@@ -59,13 +59,12 @@ bot.on('message', msg => {
         var message = "*Off the rails!*"
         msg.channel.send(message);
     } else if (msg.content == "p!sendselfie") {
-        msg.channel.send("Here is my favorite selfie of my me and my BFFs 😄!", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]})
+        msg.channel.send("Here is my favorite selfie of my me and my BFFs! 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]})
     } else if (msg.content == "p!ferrari") {
-        msg.channel.send("I'm not flexing or anything, but here's a picture of my red Ferrari 😌!", {files: ["./78ADCEA8-9C5F-4123-9E2F-4CF43D336902.jpeg"]})
+        msg.channel.send("I'm not flexing or anything, but here's a picture of my red Ferrari! 😌", {files: ["./78ADCEA8-9C5F-4123-9E2F-4CF43D336902.jpeg"]})
     } else if (msg.content == "p!partytime") {
         bot.user.setAvatar("./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg"); 
-        msg.channel.send("I am now in my party outfit! 🥳");
-
+        msg.channel.send("I am now in my party outfit! 🥳", {files: ["./665532E9-00F1-42C1-A734-EBC7242FE2EB"]})
     } 
     // responses
     else if (msg.content.includes("<@765272148876591135>")) {  // someone pings Pauline
