@@ -65,7 +65,7 @@ bot.on('message', msg => {
     } else if (msg.content == "p!partytime") {
         msg.channel.send("I am now in my party outfit! 🥳", {files: ["./665532E9-00F1-42C1-A734-EBC7242FE2EB"]});
         bot.user.setAvatar("./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg")
-                .catch((error) => { msg.channel.send("ERROR: " + error); }); 
+        .catch((error) => { msg.channel.send("ERROR: " + error); }); 
     } 
 
     // responses
