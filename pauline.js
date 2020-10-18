@@ -67,7 +67,7 @@ bot.on('message', msg => {
         bot.user.setAvatar("./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg")
         .catch((error) => { msg.channel.send("ERROR: " + error); }); 
     } else if (msg.content == "p!regular") {
-        msg.channel.send("I am now in my regular outfit! 🙂", {files ["./DE563177-1FBA-465B-B009-49295277DC74.jpeg"]})
+        msg.channel.send("I am now in my regular outfit! 🙂", {files: ["./DE563177-1FBA-465B-B009-49295277DC74.jpeg"]})
         bot.user.setAvatar("./DE563177-1FBA-465B-B009-49295277DC74.jpeg")
         .catch((error) => { msg.channel.send("ERROR: " + error); }); 
     } 
