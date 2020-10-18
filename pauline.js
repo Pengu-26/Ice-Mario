@@ -66,9 +66,9 @@ bot.on('message', msg => {
         partytime(msg)
     } else if (msg.content == "p!regular") {
         regular(msg)
-    } else if (msg.content == "p!time") {
-        msg.channel.send("Time left: " + (900000 - (Date.now() - LAST_TIME_STAMP))/1000 + "s");
-    }
+    } else if (msg.content == "p!timeleft") {
+        msg.channel.send("Time left: " + time_left() + "s");
+    } 
 
     // responses
     else if (msg.content.includes("<@765272148876591135>")) {  // someone pings Pauline
@@ -119,6 +119,12 @@ function psay(msg) {
     if (user == "Pauline#4516") {return}
     msg.delete()
     msg.channel.send(message);
+}
+function time_left() {
+    if (LAST_TIME_STAMP == 0) {
+        return 0
+    }
+    return (900000 - (Date.now() - LAST_TIME_STAMP)) / 1000
 }
 function can_switch() {
     // Tests the current time to make sure you can use the cahnge avatar command.
