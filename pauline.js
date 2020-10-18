@@ -66,6 +66,11 @@ bot.on('message', msg => {
         msg.channel.send("I am now in my party outfit! 🥳", {files: ["./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg"]})
         bot.user.setAvatar("./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg")
         .catch((error) => { msg.channel.send("ERROR: " + error); }); 
+    } else if (msg.content == "p!regular") {
+        msg.channel.send("I am now in my regular outfit! ☺️", {files ["./DE563177-1FBA-465B-B009-49295277DC74.jpeg"]})
+        bot.user.setAvatar("./DE563177-1FBA-465B-B009-49295277DC74.jpeg")
+        .catch((error) => { msg.channel.send("ERROR: " + error); }); 
+
     } 
 
     // responses
@@ -99,7 +104,7 @@ function commands(msg) {
               "`p!herewego` makes Pauline respond with *Off the rails!*\n" +
               "`p!sendselfie` makes Pauline send her favorite selfie taken with 3 friends!\n" +
               "`p!Ferrari` makes Pauline send a picture of her Ferrari!\n" +
-              "`p!partytime` switches Pauline's outfit!\n" +
+              "`p!partytime` and `p!regular` let's Pauline switch between her outfits!\n" +
               "Ping `@Pauline`, and she will respond with *🎵PAAAUUULLIIINNEEE🎵*\n"
 
               msg.channel.send(message)
