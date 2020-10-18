@@ -21,7 +21,7 @@ bot.on('ready', () => {
 /********************************
         Global variables
  ********************************/
-
+var LAST_TIME_STAMP = 0;
 
 /********************************
     Message response commands
@@ -70,7 +70,9 @@ bot.on('message', msg => {
         msg.channel.send("I am now in my regular outfit! 🙂", {files: ["./DE563177-1FBA-465B-B009-49295277DC74.jpeg"]})
         bot.user.setAvatar("./DE563177-1FBA-465B-B009-49295277DC74.jpeg")
         .catch((error) => { msg.channel.send("ERROR: " + error); }); 
-    } 
+    } else if (msg.content == "p!time") {
+        msg.channel.send(Date.now());
+    }
 
     // responses
     else if (msg.content.includes("<@765272148876591135>")) {  // someone pings Pauline
