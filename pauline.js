@@ -21,7 +21,7 @@ bot.on('ready', () => {
 /********************************
         Global variables
  ********************************/
-var LAST_TIME_STAMP = 0;
+var LAST_TIME_STAMP = 0;  // used to make sure setAvatar commands only work every 15 minutes
 
 /********************************
     Message response commands
@@ -63,25 +63,11 @@ bot.on('message', msg => {
     } else if (msg.content == "p!ferrari") {
         msg.channel.send("I'm not flexing or anything, but here's a picture of my red Ferrari! 😌", {files: ["./78ADCEA8-9C5F-4123-9E2F-4CF43D336902.jpeg"]})
     } else if (msg.content == "p!partytime") {
-        if (can_switch()) {
-            msg.channel.send("I am now in my party outfit! 🥳", {files: ["./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg"]})
-            bot.user.setAvatar("./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg")
-            LAST_TIME_STAMP = Date.now();
-        } 
-        else {
-            msg.channel.send("I can be changed in " + Math.floor((Date.now() - LAST_TIME_STAMP) / 60000) + " minutes 😊")
-        } 
+        partytime(msg)
     } else if (msg.content == "p!regular") {
-        if (can_switch()) {
-            msg.channel.send("I am now in my regular outfit! 🙂", {files: ["./DE563177-1FBA-465B-B009-49295277DC74.jpeg"]})
-            bot.user.setAvatar("./DE563177-1FBA-465B-B009-49295277DC74.jpeg")
-            LAST_TIME_STAMP = Date.now();
-        }
-        else {
-            msg.channel.send("I can be changed in " + Math.floor((Date.now() - LAST_TIME_STAMP) / 60000) + " minutes 😊")
-        } 
+        regular(msg)
     } else if (msg.content == "p!time") {
-        msg.channel.send("Time left: " + (Date.now() - LAST_TIME_STAMP) + "s");
+        msg.channel.send("Time left: " + (900000 - (Date.now() - LAST_TIME_STAMP))/1000 + "s");
     }
 
     // responses
@@ -137,11 +123,31 @@ function psay(msg) {
 function can_switch() {
     // Tests the current time to make sure you can use the cahnge avatar command.
     // Can switch every 15 minutes (900000 ms)
-    if (Date.Now() - LAST_TIME_STAMP > 900000) {
+    if (Date.now() - LAST_TIME_STAMP > 900000) {
         return 1
     } 
     else {
         return 0
     }
+}
+function partytime(msg) {
+    if (can_switch()) {
+        msg.channel.send("I am now in my party outfit! 🥳", {files: ["./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg"]})
+        bot.user.setAvatar("./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg")
+        LAST_TIME_STAMP = Date.now();
+    } 
+    else {
+        msg.channel.send("I can be changed in " + Math.ceil((900000 - (Date.now() - LAST_TIME_STAMP)) / 60000) + " minutes 😊")
+    } 
+}
+function regular(msg) {
+    if (can_switch()) {
+        msg.channel.send("I am now in my regular outfit! 🙂", {files: ["./DE563177-1FBA-465B-B009-49295277DC74.jpeg"]})
+        bot.user.setAvatar("./DE563177-1FBA-465B-B009-49295277DC74.jpeg")
+        LAST_TIME_STAMP = Date.now();
+    }
+    else {
+        msg.channel.send("I can be changed in " + Math.ceil((900000 - (Date.now() - LAST_TIME_STAMP)) / 60000) + " minutes 😊")
+    } 
 }
 
