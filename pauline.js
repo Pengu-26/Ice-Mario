@@ -71,7 +71,7 @@ bot.on('message', msg => {
     } else if (msg.content == "p!pengu") {
         msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. 🥰", {files: ["./120BF099-A5EA-4F32-8A7B-80828A9ADE99.jpeg"]})
     } else if (msg.content == "p!jimmy") {
-        msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite Mario Kart Tour driver! ☺️", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]})
+        msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite Mario Kart Tour driver! ☺️", {files: ["./F9D61245-E93C-4D18-A518-0A26A84BAE78.jpeg"]})
     } 
 
     // responses
@@ -107,6 +107,7 @@ function commands(msg) {
               "`p!Ferrari` makes Pauline send a picture of her Ferrari!\n" +
               "`p!partytime` and `p!regular` let's Pauline switch between her outfits!\n" +
               "`p!Pengu` makes Pauline send a picture of Pengu's favorite animal!\n" +
+              "`p!jimmy` makes Pauline send a picture of Jimmy's favorite MKT driver!\n" +
               "Ping `@Pauline`, and she will respond with *🎵PAAAUUULLIIINNEEE🎵*\n"
 
               msg.channel.send(message)
