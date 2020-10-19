@@ -68,6 +68,9 @@ bot.on('message', msg => {
         regular(msg)
     } else if (msg.content == "p!timeleft") {
         msg.channel.send("Time left: " + time_left() + "s");
+    } else if (msg.content == "p!pengu") {
+        msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. 🥰", {files: ["./78ADCEA8-9C5F-4123-9E2F-4CF43D336902.jpeg"]})
+
     } 
 
     // responses
