@@ -35,39 +35,19 @@ bot.on('message', msg => {
     }
 
     // Commands
-        else if (msg.content == "p!commands" || msg.content == "p!command") {
+        else if (msg.content == "r!commands" || msg.content == "r!command") {
          commands(msg)
-    } else if (msg.content.startsWith("!p")) {
+    } else if (msg.content.startsWith("!r")) {
         psay(msg)
-    } else if (msg.content == "p!v" || msg.content == "p!version") {
-        msg.channel.send("Pauline! version " + VERSION)
-    } else if (msg.content === "p!jumpupsuperstar") {
-     msg.channel.send("*It's time to jump up in the air!*\n" +
-                      "*Jump up don't be scared!*\n" +
-                      "*Jump up and your cares will soar away!*\n" +
-                      "*And if the dark clouds start to swirl!*\n" +
-                      "*Don't fear don't shed a tear, cause' I'll be your one up girl!*")
-    } else if (msg.content === "p!musicvideo") {
-        var message = "Here you go!\n" +
-                      "https://youtu.be/sNpN5nNeoAI\n" +
-                      "You're welcome!😉" 
-        msg.channel.send(message);
+    } else if (msg.content == "r!v" || msg.content == "r!version") {
+        msg.channel.send("Rosalina version " + VERSION)
     } else if (msg.content === "p!wishmeluck") {
-        var message = "Good luck!🍀😉"
+        var message = "Good luck, the stars will always shine down on you."
         msg.channel.send(message);
-    } else if (msg.content === "p!herewego") {
-        var message = "*Off the rails!*"
-        msg.channel.send(message);
+ 
     } else if (msg.content == "p!sendselfie") {
         msg.channel.send("Here is my favorite selfie of my me and my BFFs! 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]}) 
-    } else if (msg.content == "p!ferrari") {
-        msg.channel.send("I'm not flexing or anything, but here's a picture of my red Ferrari! 😌", {files: ["./78ADCEA8-9C5F-4123-9E2F-4CF43D336902.jpeg"]})
-    } else if (msg.content == "p!partytime") {
-        partytime(msg)
-    } else if (msg.content == "p!regular") {
-        regular(msg)
-    } else if (msg.content == "p!timeleft") {
-        msg.channel.send("Time left: " + time_left() + "s");
+   
     } else if (msg.content == "p!pengu") {
         msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. 🥰", {files: ["./120BF099-A5EA-4F32-8A7B-80828A9ADE99.jpeg"]})
     } else if (msg.content == "p!jimmy") {
@@ -99,16 +79,16 @@ function commands(msg) {
     message = "Usage: \n" +
               "`!p <msg>`\t\t\tMakes Pauline say message in <msg>\n" +
               "`p!v/version`\tReturns the current version of Pauline\n" +
-              "`p!jumpupsuperstar` makes Pauline sing part of her song\n" +
-              "`p!musicvideo` makes Pauline send a music video of her song, Jump Up, Super Star!\n" +
-              "`p!wishmeluck` makes Pauline wish you good luck!\n" +
-              "`p!herewego` makes Pauline respond with *Off the rails!*\n" +
+             
+             
+              "`r!wishmeluck` makes Rosalina wish you good luck!\n" +
+             
               "`p!sendselfie` makes Pauline send her favorite selfie taken with 3 friends!\n" +
-              "`p!Ferrari` makes Pauline send a picture of her Ferrari!\n" +
-              "`p!partytime` and `p!regular` let's Pauline switch between her outfits!\n" +
+             
+             
               "`p!Pengu` makes Pauline send a picture of Pengu's favorite animal!\n" +
               "`p!jimmy` makes Pauline send a picture of Jimmy's favorite MKT driver!\n" +
-              "Ping `@Pauline`, and she will respond with *🎵PAAAUUULLIIINNEEE🎵*\n"
+              "Ping `@Rosalina`, and she will respond with *May the stars shine down on you.*\n"
 
               msg.channel.send(message)
 }
