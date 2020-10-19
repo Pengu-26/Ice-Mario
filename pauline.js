@@ -69,7 +69,7 @@ bot.on('message', msg => {
     } else if (msg.content == "p!timeleft") {
         msg.channel.send("Time left: " + time_left() + "s");
     } else if (msg.content == "p!pengu") {
-        msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. 🥰", {files: ["./78ADCEA8-9C5F-4123-9E2F-4CF43D336902.jpeg"]})
+        msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. 🥰", {files: ["./120BF099-A5EA-4F32-8A7B-80828A9ADE99.jpeg"]})
 
     } 
 
@@ -105,6 +105,7 @@ function commands(msg) {
               "`p!sendselfie` makes Pauline send her favorite selfie taken with 3 friends!\n" +
               "`p!Ferrari` makes Pauline send a picture of her Ferrari!\n" +
               "`p!partytime` and `p!regular` let's Pauline switch between her outfits!\n" +
+              "`p!Pengu` makes Pauline send a picture of Pengu's favorite animal!\n" +
               "Ping `@Pauline`, and she will respond with *🎵PAAAUUULLIIINNEEE🎵*\n"
 
               msg.channel.send(message)
