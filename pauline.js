@@ -41,16 +41,16 @@ bot.on('message', msg => {
         psay(msg)
     } else if (msg.content == "r!v" || msg.content == "r!version") {
         msg.channel.send("Rosalina version " + VERSION)
-    } else if (msg.content === "p!wishmeluck") {
+    } else if (msg.content === "r!wishmeluck") {
         var message = "Good luck, the stars will always shine down on you."
         msg.channel.send(message);
  
-    } else if (msg.content == "p!sendselfie") {
+    } else if (msg.content == "r!sendselfie") {
         msg.channel.send("Here is my favorite selfie of my me and my BFFs! 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]}) 
    
-    } else if (msg.content == "p!pengu") {
+    } else if (msg.content == "r!pengu") {
         msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. 🥰", {files: ["./120BF099-A5EA-4F32-8A7B-80828A9ADE99.jpeg"]})
-    } else if (msg.content == "p!jimmy") {
+    } else if (msg.content == "r!jimmy") {
         msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite Mario Kart Tour driver! ☺️", {files: ["./F9D61245-E93C-4D18-A518-0A26A84BAE78.webp"]})
     } 
 
