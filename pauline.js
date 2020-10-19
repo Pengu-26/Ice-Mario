@@ -71,7 +71,7 @@ bot.on('message', msg => {
     } else if (msg.content == "p!pengu") {
         msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. 🥰", {files: ["./120BF099-A5EA-4F32-8A7B-80828A9ADE99.jpeg"]})
     } else if (msg.content == "p!jimmy") {
-        msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite Mario Kart Tour driver! ☺️", {files: ["./F9D61245-E93C-4D18-A518-0A26A84BAE78.jpeg"]})
+        msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite Mario Kart Tour driver! ☺️", {files: ["./F9D61245-E93C-4D18-A518-0A26A84BAE78.webp"]})
     } 
 
     // responses
