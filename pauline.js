@@ -55,7 +55,7 @@ bot.on('message', msg => {
         msg.channel.send("Here is my Lenovo Ideapad S340. 😁", {files: ["./lenovo-laptop-ideapad-s340-intel-14-02.webp"]}) 
    } else if (msg.content == "r!emojiparty") {
         msg.channel.send("🤩\n" +
-                         "💫\n" +
+                         "🥺\n" +
                          "😊\n" +
                          "🤪\n" +
                          "🥳")
