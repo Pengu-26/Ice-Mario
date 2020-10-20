@@ -46,7 +46,7 @@ bot.on('message', msg => {
         msg.channel.send(message);
  
     } else if (msg.content == "r!sendselfie") {
-        msg.channel.send("Here is my favorite selfie of my me and my BFFs! 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]}) 
+        msg.channel.send("Here is my favorite selfie of my me and my BFFs *(Taken by @Pauline)*! May the stars shine down on them. 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]}) 
    
     } else if (msg.content == "r!pengu") {
         msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. May the stars shine down on him. 🥰", {files: ["./120BF099-A5EA-4F32-8A7B-80828A9ADE99.jpeg"]})
@@ -83,11 +83,11 @@ function commands(msg) {
              
               "`r!wishmeluck` makes Rosalina wish you good luck!\n" +
              
-              "`p!sendselfie` makes Pauline send her favorite selfie taken with 3 friends!\n" +
+              "`r!sendselfie` makes Pauline send her favorite selfie taken with 3 friends!\n" +
              
              
-              "`p!Pengu` makes Pauline send a picture of Pengu's favorite animal!\n" +
-              "`p!jimmy` makes Pauline send a picture of Jimmy's favorite MKT driver!\n" +
+              "`r!Pengu` makes Pauline send a picture of Pengu's favorite animal!\n" +
+              "`r!jimmy` makes Pauline send a picture of Jimmy's favorite MKT driver!\n" +
               "Ping `@Rosalina`, and she will respond with *May the stars shine down on you.*\n"
 
               msg.channel.send(message)
