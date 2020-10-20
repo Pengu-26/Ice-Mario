@@ -47,7 +47,7 @@ bot.on('message', msg => {
     } else if (msg.content === "r!sing") {
         var message = ":musical_note:Where are you now?:musical_note:"
         msg.channel.send(message);
-    }else if (msg.content === "r!M0h1rf4n") {
+    } else if (msg.content === "r!M0h1rf4n") {
         msg.channel.send("To appreciate one of my creators, I sent a link to his favorite song which is also my favorite song too! May the stars shine down on him. 😊\n" +
                          "https://youtu.be/60ItHLz5WEA")
     } else if (msg.content == "r!sendselfie") 
@@ -55,7 +55,7 @@ bot.on('message', msg => {
    
     } else if (msg.content == "r!laptop") {
         msg.channel.send("Here is my Lenovo Ideapad S340. 😁", {files: ["./lenovo-laptop-ideapad-s340-intel-14-02.webp"]}) 
-   } else if (msg.content == "r!emojiparty") {
+    } else if (msg.content == "r!emojiparty") {
         msg.channel.send("🤩\n" +
                          "🥺\n" +
                          "😊\n" +
