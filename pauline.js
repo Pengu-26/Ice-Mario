@@ -35,46 +35,23 @@ bot.on('message', msg => {
     }
 
     // Commands
-        else if (msg.content == "r!commands" || msg.content == "r!command") {
+        else if (msg.content == "sg!commands" || msg.content == "sg!command") {
          commands(msg)
-    } else if (msg.content.startsWith("!r")) {
+    } else if (msg.content.startsWith("!sg")) {
         psay(msg)
-    } else if (msg.content == "r!v" || msg.content == "r!version") {
-        msg.channel.send("Rosalina version " + VERSION)
-    } else if (msg.content === "r!wishmeluck") {
-        var message = "Good luck, the stars will always shine down on you."
+    } else if (msg.content == "sg!v" || msg.content == "sg!version") {
+        msg.channel.send("Shy Guy version " + VERSION)
+    } else if (msg.content === "sg!unmasked") {
+        var message = "Never."
         msg.channel.send(message);
-    } else if (msg.content === "r!sing") {
-        var message = ":musical_note:Where are you now?:musical_note:"
-        msg.channel.send(message);
-    } else if (msg.content === "r!sing2") {
-        var message = ":musical_note:I won't, won't lie:musical_note:"
-        msg.channel.send(message);
-    } else if (msg.content === "r!w4lk3r") {
-        msg.channel.send("To appreciate one of my creators, I sent a link to his favorite song which is also my favorite song too! May the stars shine down on him. 😊\n" +
-                         "https://youtu.be/60ItHLz5WEA")
-    } else if (msg.content === "r!tatemcrae") {
-        msg.channel.send("This one is also my favorite song! May the stars shine down on her. 😊\n" +
-                         "https://youtu.be/xbttzKsGj24")
-    } else if (msg.content == "r!sendselfie") {
-        msg.channel.send("Here is my favorite selfie of my me and my BFFs *(Taken by @Pauline)*! May the stars shine down on them. 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]}) 
+    } else if (msg.content === "sg!shyguykart") {
+        msg.channel.send("Shy Guy Kart is awesome! He is my #1 fan! 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]})
+        
    
-    } else if (msg.content == "r!laptop") {
-        msg.channel.send("Here is my Lenovo Ideapad S340. 😁", {files: ["./lenovo-laptop-ideapad-s340-intel-14-02.webp"]}) 
-    } else if (msg.content == "r!emojiparty") {
-        msg.channel.send("🤩\n" +
-                         "🥺\n" +
-                         "😊\n" +
-                         "🤪\n" +
-                         "🥳")
-    } else if (msg.content == "r!pengu") {
-        msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. May the stars shine down on him. 🥰", {files: ["./120BF099-A5EA-4F32-8A7B-80828A9ADE99.jpeg"]})
-    } else if (msg.content == "r!jimmy") {
-        msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite Mario Kart Tour driver! May the stars shine down on him. ☺️", {files: ["./F9D61245-E93C-4D18-A518-0A26A84BAE78.webp"]})
-    } 
+   
 
     // responses
-    else if (msg.content.includes("<@767805960361869312>")) {  // someone pings Pauline
+    else if (msg.content.includes("<@768204779737579540>")) {  // someone pings Pauline
         msg.channel.send("May the stars shine down on you.")
     } 
 
@@ -90,32 +67,24 @@ function dm(msg) {
 }
 function phelp(msg) {
     message = "Usage: \n" +
-    "p!say <message> or !p <message> to send a message.\n" +
-    "Use p!commands to see a list of all the commands currently supported."
+    "sg!say <message> or !p <message> to send a message.\n" +
+    "Use sg!commands to see a list of all the commands currently supported."
     msg.channel.send(message)
 }
 function commands(msg) {
     message = "Usage: \n" +
-              "`!r <msg>`\t\t\tMakes Rosalina say message in <msg>\n" +
+              "`!r <msg>`\t\t\tMakes Shy Guy say message in <msg>\n" +
               "`r!v/version`\tReturns the current version of Pauline\n" +
+              "`r!unmasked` tells Shy Guy to show his face.\n" +
              
               
-              "`r!wishmeluck` makes Rosalina wish you good luck!\n" +
-             
-              "`r!sendselfie` makes Rosalina send her favorite selfie taken with 3 friends!\n" +
-              "`r!emojiparty` makes Rosalina send her 5 favorite emojis!\n" +
-             
-              "`r!Pengu` makes Pauline send a picture of Pengu's favorite animal!\n" +
-              "`r!jimmy` makes Pauline send a picture of Jimmy's favorite MKT driver!\n" +
-              "`r!sing` makes Rosalina sing her favorite song" +    
-              "Ping `@Rosalina`, and she will respond with *May the stars shine down on you.*\n"
-  
+              
 
               msg.channel.send(message)
 }
-function psay(msg) {
+function sgsay(msg) {
     message = msg.content
-    if (message.substr(0, 6) == "im!say") {
+    if (message.substr(0, 6) == "sg!say") {
       message = message.substr(7, message.length)  // use only text after the im!say command
     } else {
       message = message.substr(3, message.length)  // use only text after the !im command
@@ -123,7 +92,7 @@ function psay(msg) {
 
     // prevent bot from replying to itself
     user = msg.member.user.tag
-    if (user == "@767805960361869312") {return}
+    if (user == "@768204779737579540") {return}
     msg.delete()
     msg.channel.send(message);
 }
