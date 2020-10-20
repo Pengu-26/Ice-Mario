@@ -77,8 +77,8 @@ function phelp(msg) {
 }
 function commands(msg) {
     message = "Usage: \n" +
-              "`!p <msg>`\t\t\tMakes Pauline say message in <msg>\n" +
-              "`p!v/version`\tReturns the current version of Pauline\n" +
+              "`!r <msg>`\t\t\tMakes Rosalina say message in <msg>\n" +
+              "`r!v/version`\tReturns the current version of Pauline\n" +
              
              
               "`r!wishmeluck` makes Rosalina wish you good luck!\n" +
