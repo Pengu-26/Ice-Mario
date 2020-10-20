@@ -51,8 +51,8 @@ bot.on('message', msg => {
    
 
     // responses
-    else if (msg.content.includes("<@768204779737579540>")) {  // someone pings Pauline
-        msg.channel.send("May the stars shine down on you.")
+    else if (msg.content.includes("<@768204779737579540>")) {  // someone pings Shy Guy
+        msg.channel.send("🙈")
     } 
 
 });
