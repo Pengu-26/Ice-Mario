@@ -48,6 +48,9 @@ bot.on('message', msg => {
     } else if (msg.content == "r!sendselfie") {
         msg.channel.send("Here is my favorite selfie of my me and my BFFs *(Taken by @Pauline)*! May the stars shine down on them. 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]}) 
    
+    } else if (msg.content == "r!laptop") {
+        msg.channel.send("Here is my Lenovo Ideapad S340. 😁", {files: ["./lenovo-laptop-ideapad-s340-intel-14-02.webp"]}) 
+   
     } else if (msg.content == "r!pengu") {
         msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. May the stars shine down on him. 🥰", {files: ["./120BF099-A5EA-4F32-8A7B-80828A9ADE99.jpeg"]})
     } else if (msg.content == "r!jimmy") {
