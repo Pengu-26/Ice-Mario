@@ -46,7 +46,7 @@ bot.on('message', msg => {
         msg.channel.send(message);
     } else if (msg.content === "sg!shyguykart") {
         msg.channel.send("Shy Guy Kart is awesome! He is my #1 fan! 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]})
-        
+    } 
    
    
 
