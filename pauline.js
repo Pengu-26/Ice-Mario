@@ -55,8 +55,8 @@ bot.on('message', msg => {
     } 
 
     // responses
-    else if (msg.content.includes("<@Rosalina#1252>")) {  // someone pings Pauline
-        msg.channel.send("🎵PAAAUUULLIIINNEEE🎵")
+    else if (msg.content.includes("<@767805960361869312>")) {  // someone pings Pauline
+        msg.channel.send("May the stars shine down on you.")
     } 
 
 });
@@ -102,7 +102,7 @@ function psay(msg) {
 
     // prevent bot from replying to itself
     user = msg.member.user.tag
-    if (user == "Pauline#4516") {return}
+    if (user == "@767805960361869312") {return}
     msg.delete()
     msg.channel.send(message);
 }
@@ -122,24 +122,3 @@ function can_switch() {
         return 0
     }
 }
-function partytime(msg) {
-    if (can_switch()) {
-        msg.channel.send("I am now in my party outfit! 🥳", {files: ["./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg"]})
-        bot.user.setAvatar("./665532E9-00F1-42C1-A734-EBC7242FE2EB.jpeg")
-        LAST_TIME_STAMP = Date.now();
-    } 
-    else {
-        msg.channel.send("I can be changed in " + Math.ceil((900000 - (Date.now() - LAST_TIME_STAMP)) / 60000) + " minutes 😊")
-    } 
-}
-function regular(msg) {
-    if (can_switch()) {
-        msg.channel.send("I am now in my regular outfit! 🙂", {files: ["./DE563177-1FBA-465B-B009-49295277DC74.jpeg"]})
-        bot.user.setAvatar("./DE563177-1FBA-465B-B009-49295277DC74.jpeg")
-        LAST_TIME_STAMP = Date.now();
-    }
-    else {
-        msg.channel.send("I can be changed in " + Math.ceil((900000 - (Date.now() - LAST_TIME_STAMP)) / 60000) + " minutes 😊")
-    } 
-}
-
