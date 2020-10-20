@@ -37,7 +37,7 @@ bot.on('message', msg => {
     // Commands
         else if (msg.content == "sg!commands" || msg.content == "sg!command") {
          commands(msg.send.)
-    } else if (msg.content.startsWith("!sg")) {
+    } else if (msg.content.startsWith("!sg") {
         psay(msg)
     } else if (msg.content == "sg!v" || msg.content == "sg!version") {
         msg.channel.send("Shy Guy version " + VERSION)
