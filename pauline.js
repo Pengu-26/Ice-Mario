@@ -47,7 +47,7 @@ bot.on('message', msg => {
     } else if (msg.content === "r!sing") {
         var message = ":musical_note:Where are you now?:musical_note:"
         msg.channel.send(message);
-    } else if (msg.content === "r!M0h1rf4n") {
+    } else if (msg.content === "r!w4lk3r") {
         msg.channel.send("To appreciate one of my creators, I sent a link to his favorite song which is also my favorite song too! May the stars shine down on him. 😊\n" +
                          "https://youtu.be/60ItHLz5WEA")
     } else if (msg.content == "r!sendselfie") 
@@ -101,7 +101,7 @@ function commands(msg) {
              
               "`r!Pengu` makes Pauline send a picture of Pengu's favorite animal!\n" +
               "`r!jimmy` makes Pauline send a picture of Jimmy's favorite MKT driver!\n" +
-              "`r!sing` makes Rosalina sing her favorite song" +
+              "`r!sing` makes Rosalina sing her favorite song" +    
               "Ping `@Rosalina`, and she will respond with *May the stars shine down on you.*\n"
   
 
