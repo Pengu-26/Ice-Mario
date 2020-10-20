@@ -53,7 +53,12 @@ bot.on('message', msg => {
    
     } else if (msg.content == "r!laptop") {
         msg.channel.send("Here is my Lenovo Ideapad S340. 😁", {files: ["./lenovo-laptop-ideapad-s340-intel-14-02.webp"]}) 
-   
+   } else if (msg.content == "r!emojiparty") {
+        msg.channel.send("🤩\n" +
+                         "💫\n" +
+                         "😊\n" +
+                         "🤪\n" +
+                         "🥳")
     } else if (msg.content == "r!pengu") {
         msg.channel.send("To appreciate one of my creators, I sent a picture of his favorite animal. May the stars shine down on him. 🥰", {files: ["./120BF099-A5EA-4F32-8A7B-80828A9ADE99.jpeg"]})
     } else if (msg.content == "r!jimmy") {
@@ -89,8 +94,8 @@ function commands(msg) {
               
               "`r!wishmeluck` makes Rosalina wish you good luck!\n" +
              
-              "`r!sendselfie` makes Pauline send her favorite selfie taken with 3 friends!\n" +
-             
+              "`r!sendselfie` makes Rosalina send her favorite selfie taken with 3 friends!\n" +
+              "`r!emojiparty` makes Rosalina send her 5 favorite emojis!\n" +
              
               "`r!Pengu` makes Pauline send a picture of Pengu's favorite animal!\n" +
               "`r!jimmy` makes Pauline send a picture of Jimmy's favorite MKT driver!\n" +
