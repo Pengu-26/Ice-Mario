@@ -44,6 +44,9 @@ bot.on('message', msg => {
     } else if (msg.content === "r!wishmeluck") {
         var message = "Good luck, the stars will always shine down on you."
         msg.channel.send(message);
+    } else if (msg.content === "r!sing") {
+        var message = ":musical_note:Where are you now?:musical_note:"
+        msg.channel.send(message);
  
     } else if (msg.content == "r!sendselfie") {
         msg.channel.send("Here is my favorite selfie of my me and my BFFs *(Taken by @Pauline)*! May the stars shine down on them. 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]}) 
@@ -83,7 +86,7 @@ function commands(msg) {
               "`!r <msg>`\t\t\tMakes Rosalina say message in <msg>\n" +
               "`r!v/version`\tReturns the current version of Pauline\n" +
              
-             
+              
               "`r!wishmeluck` makes Rosalina wish you good luck!\n" +
              
               "`r!sendselfie` makes Pauline send her favorite selfie taken with 3 friends!\n" +
@@ -91,7 +94,9 @@ function commands(msg) {
              
               "`r!Pengu` makes Pauline send a picture of Pengu's favorite animal!\n" +
               "`r!jimmy` makes Pauline send a picture of Jimmy's favorite MKT driver!\n" +
+              "`r!sing` makes Rosalina sing her favorite song" +
               "Ping `@Rosalina`, and she will respond with *May the stars shine down on you.*\n"
+  
 
               msg.channel.send(message)
 }
