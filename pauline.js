@@ -73,10 +73,10 @@ function phelp(msg) {
 }
 function commands(msg) {
     message = "Usage: \n" +
-              "`!r <msg>`\t\t\tMakes Shy Guy say message in <msg>\n" +
-              "`r!v/version`\tReturns the current version of Pauline\n" +
-              "`r!unmasked` tells Shy Guy to show his face.\n" +
-             
+              "`!sg <msg>`\t\t\tMakes Shy Guy say message in <msg>\n" +
+              "`sg!v/version`\tReturns the current version of Pauline\n" +
+              "`sg!unmasked` tells Shy Guy to show his face.\n" +
+              "`sg!shyguykart` makes Shy Guy send a good picture."
               
               
 
