@@ -36,7 +36,7 @@ bot.on('message', msg => {
 
     // Commands
         else if (msg.content == "sg!commands" || msg.content == "sg!command") {
-         commands(msg)
+         commands(msg.send.)
     } else if (msg.content.startsWith("!sg")) {
         psay(msg)
     } else if (msg.content == "sg!v" || msg.content == "sg!version") {
@@ -45,7 +45,7 @@ bot.on('message', msg => {
         var message = "Never."
         msg.channel.send(message);
     } else if (msg.content === "sg!shyguykart") {
-        msg.channel.send("Shy Guy Kart is awesome! He is my #1 fan! 😁", {files: ["./37B03969-6402-4273-8AEA-A9187512EB2E.jpeg"]})
+        msg.channel.send("Shy Guy Kart is awesome! He is my #1 fan! 😁", {files: ["./4CE63FBF-4179-46B5-B3F2-2389BEA93B63.jpeg"]})
     } 
    
    
