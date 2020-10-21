@@ -51,6 +51,9 @@ bot.on('message', msg => {
     } else if (msg.content === "sg!gold") {
         msg.channel.send("I am now Gold Shy Guy! 👑", {files: ["./8CC68885-3F9D-4CED-865E-76190DF1B72A.png"]})
         bot.user.setAvatar("./8CC68885-3F9D-4CED-865E-76190DF1B72A.png")
+    } else if (msg.content === "sg!normal") {
+        msg.channel.send("I am now normal Shy Guy!", {files: ["./D0367FBB-15F1-4C42-B118-0C91E3AC5375.png"]})
+        bot.user.setAvatar("./D0367FBB-15F1-4C42-B118-0C91E3AC5375.png")
        
        
     }
@@ -85,7 +88,7 @@ function commands(msg) {
               "`sg!unmasked` tells Shy Guy to show his face.\n" +
               "`sg!shyguykart` makes Shy Guy send a good picture.\n" +
               "`sg!fat` sends a picture of fat Shy Guy."
-            // "`sg!gold` transforms Shy Guy into Gold Shy Guy." 
+              "`sg!gold` and `sg!normal` let's you switch between normal and Gold Shy Guy." 
 
               msg.channel.send(message)
 }
