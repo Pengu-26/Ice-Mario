@@ -49,8 +49,9 @@ bot.on('message', msg => {
     } else if (msg.content === "sg!fat") {
         msg.channel.send("I'm stuffed! 😫", {files: ["./3B07E559-6108-41BB-9C91-52C767CECD06.jpeg"]})
     } else if (msg.content === "sg!gold") {
-        bot.user.setAvatar("./FFB171E9-0395-4B8B-BBB2-50431134465B.jpeg")
         msg.channel.send("I am now Gold Shy Guy! 👑", {files: ["./FFB171E9-0395-4B8B-BBB2-50431134465B.jpeg"]})
+        bot.user.setAvatar("./FFB171E9-0395-4B8B-BBB2-50431134465B.jpeg")
+       
        
     }
    
