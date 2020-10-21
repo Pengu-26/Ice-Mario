@@ -38,7 +38,7 @@ bot.on('message', msg => {
         else if (msg.content == "sg!commands" || msg.content == "sg!command") {
          commands(msg)
     } else if (msg.content.startsWith("!sg")) {
-        psay(msg)
+        sgsay(msg)
     } else if (msg.content == "sg!v" || msg.content == "sg!version") {
         msg.channel.send("Shy Guy version " + VERSION)
     } else if (msg.content === "sg!unmasked") {
