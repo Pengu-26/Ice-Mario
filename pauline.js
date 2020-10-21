@@ -47,7 +47,7 @@ bot.on('message', msg => {
     } else if (msg.content === "sg!shyguykart") {
         msg.channel.send("Shy Guy Kart is awesome! He is my #1 fan! 😁", {files: ["./4CE63FBF-4179-46B5-B3F2-2389BEA93B63.jpeg"]})
     else if (msg.content === "sg!fat") {
-        msg.channel.send("I'm stuffed! 😫", {files: ["./A6F8B4B8-6D60-40AE-AEB5-A1BFB5864804.jpeg"]})
+        msg.channel.send("I'm stuffed! 😫", {files: ["./3B07E559-6108-41BB-9C91-52C767CECD06.jpeg"]})
     } 
    
    
@@ -78,8 +78,8 @@ function commands(msg) {
               "`!sg <msg>`\t\t\tMakes Shy Guy say message in <msg>\n" +
               "`sg!v/version`\tReturns the current version of Pauline\n" +
               "`sg!unmasked` tells Shy Guy to show his face.\n" +
-              "`sg!shyguykart` makes Shy Guy send a good picture."
-              
+              "`sg!shyguykart` makes Shy Guy send a good picture.\n" +
+              "`sg!fat` sends a picture of fat Shy Guy." 
               
 
               msg.channel.send(message)
