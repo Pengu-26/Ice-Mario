@@ -48,7 +48,10 @@ bot.on('message', msg => {
         msg.channel.send("Shy Guy Kart is awesome! He is my #1 fan! 😁", {files: ["./4CE63FBF-4179-46B5-B3F2-2389BEA93B63.jpeg"]})
     } else if (msg.content === "sg!fat") {
         msg.channel.send("I'm stuffed! 😫", {files: ["./3B07E559-6108-41BB-9C91-52C767CECD06.jpeg"]})
-    } 
+    } else if (msg.content === "sg!gold") {
+        msg.channel.send("I am now Gold Shy Guy! 👑", {files: ["./053A382B-A021-4998-8656-7832B9567917.jpeg"]})
+        bot.user.setAvatar("./053A382B-A021-4998-8656-7832B9567917.jpeg")
+    }
    
    
 
@@ -75,12 +78,12 @@ function phelp(msg) {
 }
 function commands(msg) {
     message = "Usage: \n" +
-              "`!sg <msg>`\t\t\tMakes Shy Guy say message in <msg>.\n" +
-              "`sg!v/version`\tReturns the current version of Shy Guy.\n" +
+              "`!sg <msg>` makes Shy Guy say message in <msg>.\n" +
+              "`sg!v/version` Returns the current version of Shy Guy.\n" +
               "`sg!unmasked` tells Shy Guy to show his face.\n" +
               "`sg!shyguykart` makes Shy Guy send a good picture.\n" +
-              "`sg!fat` sends a picture of fat Shy Guy." 
-              
+              "`sg!fat` sends a picture of fat Shy Guy.\n" +
+              "`sg!gold` transforms Shy Guy into Gold Shy Guy." 
 
               msg.channel.send(message)
 }
