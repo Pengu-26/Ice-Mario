@@ -88,7 +88,7 @@ function commands(msg) {
               "`sg!unmasked` tells Shy Guy to show his face.\n" +
               "`sg!shyguykart` makes Shy Guy send a good picture.\n" +
               "`sg!fat` sends a picture of fat Shy Guy."
-              "`sg!gold` and `sg!normal` let's you switch between normal and Gold Shy Guy." 
+              "`sg!gold` and `sg!normal` let's you switch between normal and Gold Shy Guy. Don't spam it or use it too much or it *will* cause an error." 
 
               msg.channel.send(message)
 }
