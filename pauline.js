@@ -16,7 +16,7 @@ bot.login(TOKEN);
 bot.on('ready', () => {
   console.info(`Logged in as ${bot.user.tag}! verion ${VERSION}`);
   // bot.user.setPresence({game: {name: `Mario Kart Tour`}, type: "PLAYING"}). // Uncomment this to set the game being played
-};
+});
 
 /********************************
         Global variables
@@ -51,7 +51,7 @@ bot.on('message', msg => {
    
 
     // responses
-    else if (msg.content.includes("<@768204779737579540>") {  // someone pings Shy Guy
+    else if (msg.content.includes("<@768204779737579540>")) {  // someone pings Shy Guy
         msg.channel.send("🙈")
     } 
 
