@@ -16,7 +16,7 @@ bot.login(TOKEN);
 bot.on('ready', () => {
   console.info(`Logged in as ${bot.user.tag}! verion ${VERSION}`);
   // bot.user.setPresence({game: {name: `Mario Kart Tour`}, type: "PLAYING"}). // Uncomment this to set the game being played
-});
+};
 
 /********************************
         Global variables
@@ -37,7 +37,7 @@ bot.on('message', msg => {
     // Commands
         else if (msg.content == "sg!commands" || msg.content == "sg!command") {
          commands(msg.send.)
-    } else if (msg.content.startsWith("!sg") {
+    } else if (msg.content.startsWith("!sg")) {
         psay(msg)
     } else if (msg.content == "sg!v" || msg.content == "sg!version") {
         msg.channel.send("Shy Guy version " + VERSION)
