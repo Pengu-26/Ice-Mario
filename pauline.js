@@ -82,7 +82,7 @@ function commands(msg) {
               "`sg!v/version` Returns the current version of Shy Guy.\n" +
               "`sg!unmasked` tells Shy Guy to show his face.\n" +
               "`sg!shyguykart` makes Shy Guy send a good picture.\n" +
-              "`sg!fat` sends a picture of fat Shy Guy.\n" +
+              "`sg!fat` sends a picture of fat Shy Guy."
             // "`sg!gold` transforms Shy Guy into Gold Shy Guy." 
 
               msg.channel.send(message)
