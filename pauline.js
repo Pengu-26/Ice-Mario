@@ -47,7 +47,7 @@ bot.on('message', msg => {
     } else if (msg.content === "sg!shyguykart") {
         msg.channel.send("Shy Guy Kart is awesome! He is my #1 fan! 😁", {files: ["./4CE63FBF-4179-46B5-B3F2-2389BEA93B63.jpeg"]})
     else if (msg.content === "sg!fat") {
-        msg.channel.send("I'm stuffed! 😫", {files: ["./A6F8B4B8-6D60-40AE-AEB5-A1BFB5864804.gif"]})
+        msg.channel.send("I'm stuffed! 😫", {files: ["./A6F8B4B8-6D60-40AE-AEB5-A1BFB5864804.jpeg"]})
     } 
    
    
