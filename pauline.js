@@ -35,7 +35,7 @@ bot.on('message', msg => {
     }
 
     // Commands
-        else if (msg.content == "sg!commands" || msg.content == "sg!command") {
+    else if (msg.content == "sg!commands" || msg.content == "sg!command") {
          commands(msg)
     } else if (msg.content.startsWith("!sg")) {
         sgsay(msg)
@@ -48,17 +48,11 @@ bot.on('message', msg => {
     } else if (msg.content === "sg!fat") {
         msg.channel.send("I'm stuffed! 😫", {files: ["./3B07E559-6108-41BB-9C91-52C767CECD06.jpeg"]})
     } else if (msg.content === "sg!gold") {
-        msg.channel.send("I am now **gold** Shy Guy! 👑", {files: ["./8CC68885-3F9D-4CED-865E-76190DF1B72A.png"]})
-        bot.user.setAvatar("./8CC68885-3F9D-4CED-865E-76190DF1B72A.png")
+        switch_avatar(msg, "I am now **gold** Shy Guy! 👑", "./8CC68885-3F9D-4CED-865E-76190DF1B72A.png")
     } else if (msg.content === "sg!normal") {
-        msg.channel.send("I am now **normal** Shy Guy!", {files: ["./D0367FBB-15F1-4C42-B118-0C91E3AC5375.png"]})
-        bot.user.setAvatar("./D0367FBB-15F1-4C42-B118-0C91E3AC5375.png")
+        switch_avatar(msg, "I am now **normal** Shy Guy!", "./D0367FBB-15F1-4C42-B118-0C91E3AC5375.png")
     } else if (msg.content === "sg!chef") {
-        msg.channel.send("I am now **chef** Shy Guy!", {files: ["./940161A1-6A1B-4294-8378-EC8BF0B4B444.png"]})
-        bot.user.setAvatar("./940161A1-6A1B-4294-8378-EC8BF0B4B444.png")
-       
-       
-       
+        switch_avatar(msg, "I am now **chef** Shy Guy!", "./940161A1-6A1B-4294-8378-EC8BF0B4B444.png")
     }
    
    
@@ -87,7 +81,6 @@ function phelp(msg) {
 function commands(msg) {
     message = "Usage: \n" +
               "`!sg <msg>` makes Shy Guy say message in <msg>.\n" +
-             
               "`sg!unmasked` tells Shy Guy to show his face.\n" +
               "`sg!shyguykart` makes Shy Guy send a good picture.\n" +
               "`sg!fat` sends a picture of fat Shy Guy.\n" +
@@ -124,4 +117,14 @@ function can_switch() {
     else {
         return 0
     }
+}
+function switch_avatar(msg, to_print, fname) {
+    if (can_switch()) {
+        msg.channel.send(to_print, {files: [fname]})
+        bot.user.setAvatar(fname).catch((e) => {msg.channel.send(e)});
+        LAST_TIME_STAMP = Date.now();
+    } 
+    else {
+        msg.channel.send("I can be changed in " + Math.ceil((900000 - (Date.now() - LAST_TIME_STAMP)) / 60000) + " minutes 😊")
+    } 
 }
