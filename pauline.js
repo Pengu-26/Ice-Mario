@@ -91,7 +91,7 @@ function commands(msg) {
               "`sg!unmasked` tells Shy Guy to show his face.\n" +
               "`sg!shyguykart` makes Shy Guy send a good picture.\n" +
               "`sg!fat` sends a picture of fat Shy Guy.\n" +
-              "`sg!gold`, `sg!normal`, and `sg!chef` let's you switch between normal, chef, and gold Shy Guy. Don't spam it or use it too much or it *will* cause an error." 
+              "`sg!gold`, `sg!normal`, and `sg!chef` let's you switch between normal, chef, and gold Shy Guy. Each one of these can only be used once every 15 minutes." 
 
               msg.channel.send(message)
 }
