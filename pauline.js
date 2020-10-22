@@ -48,11 +48,15 @@ bot.on('message', msg => {
     } else if (msg.content === "sg!fat") {
         msg.channel.send("I'm stuffed! 😫", {files: ["./3B07E559-6108-41BB-9C91-52C767CECD06.jpeg"]})
     } else if (msg.content === "sg!gold") {
-        msg.channel.send("I am now Gold Shy Guy! 👑", {files: ["./8CC68885-3F9D-4CED-865E-76190DF1B72A.png"]})
+        msg.channel.send("I am now **gold** Shy Guy! 👑", {files: ["./8CC68885-3F9D-4CED-865E-76190DF1B72A.png"]})
         bot.user.setAvatar("./8CC68885-3F9D-4CED-865E-76190DF1B72A.png")
     } else if (msg.content === "sg!normal") {
-        msg.channel.send("I am now normal Shy Guy!", {files: ["./D0367FBB-15F1-4C42-B118-0C91E3AC5375.png"]})
+        msg.channel.send("I am now **normal** Shy Guy!", {files: ["./D0367FBB-15F1-4C42-B118-0C91E3AC5375.png"]})
         bot.user.setAvatar("./D0367FBB-15F1-4C42-B118-0C91E3AC5375.png")
+    } else if (msg.content === "sg!chef") {
+        msg.channel.send("I am now **chef** Shy Guy!", {files: ["./940161A1-6A1B-4294-8378-EC8BF0B4B444.png"]})
+        bot.user.setAvatar("./940161A1-6A1B-4294-8378-EC8BF0B4B444.png")
+       
        
        
     }
@@ -87,7 +91,7 @@ function commands(msg) {
               "`sg!unmasked` tells Shy Guy to show his face.\n" +
               "`sg!shyguykart` makes Shy Guy send a good picture.\n" +
               "`sg!fat` sends a picture of fat Shy Guy.\n" +
-              "`sg!gold` and `sg!normal` let's you switch between normal and Gold Shy Guy. Don't spam it or use it too much or it *will* cause an error." 
+              "`sg!gold`, `sg!normal`, and `sg!chef` let's you switch between normal, chef, and gold Shy Guy. Don't spam it or use it too much or it *will* cause an error." 
 
               msg.channel.send(message)
 }
