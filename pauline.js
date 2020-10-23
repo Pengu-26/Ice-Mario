@@ -136,15 +136,15 @@ function on_off(msg) {
     var m = msg.content;
 
     // only do this if statement if msg.content is on/off AND is from a dev
-    if ((m == "sg!on" || m = "sg!off") && id_list.indexOf(msg_sender) >= 0) {
+    if ((m == "sg!on" || m == "sg!off") && id_list.indexOf(msg_sender) >= 0) {
         // turn off if it is on
         if (ON_OFF == 1) {
             ON_OFF = 0;
-            bot.user.setPresence(status: 'invisible');
+            bot.user.setPresence({status: 'dnd'});
         } 
         else {
             ON_OFF = 1;
-            bot.user.setPresence(status: 'online');
+            bot.user.setPresence({status: 'online'});
         }
         return 1; 
     }
