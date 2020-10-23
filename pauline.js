@@ -22,6 +22,7 @@ bot.on('ready', () => {
         Global variables
  ********************************/
 var LAST_TIME_STAMP = 0;  // used to make sure setAvatar commands only work every 15 minutes
+var ON_OFF = 1;           // 1 = on, 0 = off
 
 /********************************
     Message response commands
@@ -33,19 +34,19 @@ bot.on('message', msg => {
         dm(msg)
         return
     }
+    if (on_off(msg) == 1) {return} // ignore all commands if bot is off
 
     // Commands
     else if (msg.content == "sg!commands" || msg.content == "sg!command") {
          commands(msg)
     } else if (msg.content.startsWith("!sg")) {
         sgsay(msg)
-   
     } else if (msg.content === "sg!unmasked") {
         var message = "Never."
         msg.channel.send(message);
     } else if (msg.content === "sg!shyguykart") {
         msg.channel.send("Shy Guy Kart is awesome! He is my #1 fan! 😁", {files: ["./4CE63FBF-4179-46B5-B3F2-2389BEA93B63.jpeg"]})
-     else if (msg.content === "sg!fat") {
+    } else if (msg.content === "sg!fat") {
         msg.channel.send("I'm stuffed! 😫", {files: ["./3B07E559-6108-41BB-9C91-52C767CECD06.jpeg"]})
     } else if (msg.content === "sg!gold") {
         switch_avatar(msg, "I am now **gold** Shy Guy! 👑", "./8CC68885-3F9D-4CED-865E-76190DF1B72A.png")
@@ -127,4 +128,32 @@ function switch_avatar(msg, to_print, fname) {
     else {
         msg.channel.send("I can be changed in " + Math.ceil((900000 - (Date.now() - LAST_TIME_STAMP)) / 60000) + " minutes 😊")
     } 
+}
+function on_off(msg) {
+    //    user:            jimmy                   pengu                walker
+    const id_list = ["660521636482514944", "734214960984490013", "335603474156748811"];
+    var msg_sender = msg.author.id; 
+    var m = msg.content;
+
+    // only do this if statement if msg.content is on/off AND is from a dev
+    if ((m == "sg!on" || m = "sg!off") && id_list.indexOf(msg_sender) >= 0) {
+        // turn off if it is on
+        if (ON_OFF == 1) {
+            ON_OFF = 0;
+            bot.user.setPresence(status: 'invisible');
+        } 
+        else {
+            ON_OFF = 1;
+            bot.user.setPresence(status: 'online');
+        }
+        return 1; 
+    }
+    // everything else, just check if bot is on or off
+    else {
+        if (ON_OFF == 1) {
+            return 0
+        } else {
+            return 1
+        }
+    }
 }
