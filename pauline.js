@@ -141,10 +141,23 @@ function on_off(msg) {
         if (ON_OFF == 1) {
             ON_OFF = 0;
             bot.user.setPresence({status: 'dnd'});
+            msg.channel.send("I am now **OFF**")
+            .then(message => {
+                setTimeout(function() {
+                    message.delete();
+                }, 5000);
+            })
+
         } 
         else {
             ON_OFF = 1;
             bot.user.setPresence({status: 'online'});
+            msg.channel.send("I am now **ON**")
+            .then(message => {
+                setTimeout(function() {
+                    message.delete();
+                }, 5000);
+            })
         }
         return 1; 
     }
