@@ -130,8 +130,8 @@ function switch_avatar(msg, to_print, fname) {
     } 
 }
 function on_off(msg) {
-    //    user:            jimmy                   pengu                walker
-    const id_list = ["660521636482514944", "734214960984490013", "335603474156748811"];
+    //    user:     |  server owner    |       jimmy         |        pengu       |        walker       |
+    const id_list = [msg.guild.ownerID, "660521636482514944", "734214960984490013", "335603474156748811"];
     var msg_sender = msg.author.id; 
     var m = msg.content;
 
