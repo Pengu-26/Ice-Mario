@@ -54,6 +54,11 @@ bot.on('message', msg => {
         switch_avatar(msg, "I am now **normal** Shy Guy!", "./D0367FBB-15F1-4C42-B118-0C91E3AC5375.png")
     } else if (msg.content === "sg!chef") {
         switch_avatar(msg, "I am now **chef** Shy Guy!", "./940161A1-6A1B-4294-8378-EC8BF0B4B444.png")
+    } else if (msg.content === "sg!black") {
+        switch_avatar(msg, "I am now **black** Shy Guy!", "./62102316-9C81-4BEB-A2D2-620832881B6D.png")
+    } else if (msg.content === "sg!pink") {
+        switch_avatar(msg, "I am now **pink** Shy Guy!", "./9B3BB9F5-4289-41D9-AEC4-3E25A31BF97A.png")
+
     }
    
    
@@ -85,7 +90,7 @@ function commands(msg) {
               "`sg!unmasked` tells Shy Guy to show his face.\n" +
               "`sg!shyguykart` makes Shy Guy send a good picture.\n" +
               "`sg!fat` sends a picture of fat Shy Guy.\n" +
-              "`sg!gold`, `sg!normal`, and `sg!chef` let's you switch between normal, chef, and gold Shy Guy. Each one of these can only be used once every 15 minutes." 
+              "`sg!gold`, `sg!normal`, `sg!chef`, `sg!black`, and `sg!pink` let's you switch between Shy Guy's outfits. Each one of these can only be used once every 15 minutes." 
 
               msg.channel.send(message)
 }
