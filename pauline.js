@@ -102,11 +102,15 @@ function sgsay(msg) {
       message = message.substr(3, message.length)  // use only text after the !im command
     }
 
-    // prevent bot from replying to itself
-    user = msg.member.user.tag
-    if (user == "@768204779737579540") {return}
-    msg.delete()
-    msg.channel.send(message);
+    // prevent bot from replying to other bots
+    if (msg.author.bot) {return}
+
+    // respond after deleting the message
+    msg.delete({timeout: 200})
+        .then(msg => { 
+            msg.channel.send(message);
+        })
+        .catch(console.log("Say command failed"));
 }
 function time_left() {
     if (LAST_TIME_STAMP == 0) {
